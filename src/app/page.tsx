@@ -1,5 +1,6 @@
 import Image from "next/image";
 import DropMenu from "./components/menu";
+import Example from "./components/menu";
 
 export default function Home() {
   return (
@@ -13,10 +14,17 @@ export default function Home() {
         Handmade with that Caroline craftmanship
       </div>
       <div className="flex my-10 w-3/4 h-80 justify-center mx-auto border-solid border-4 border-black ">
-        Image carosel
+        <div>
+          <Image
+            src="/imgs/items/sampleHeadband.jpeg"
+            width={250}
+            height={250}
+            alt="picture of a stock headband"
+          />
+        </div>
       </div>
       <div className="flex justify-center my-10 text-sm">Top Pick </div>
-      <div className="flex w-1/2 h-80 justify-center  border-solid border-4 border-black mx-auto">
+      <div className="flex w-60 h-80 justify-center  border-solid border-4 border-black mx-auto">
         <Image
           src="/imgs/topPicks/topPick.jpeg"
           width={250}
@@ -28,7 +36,7 @@ export default function Home() {
         View All Products{" "}
       </div>
 
-      <div className="flex  my-10 w-1/2 h-80 justify-center  border-solid border-4 border-black mx-auto">
+      <div className="flex  my-10 w-80 h-80 justify-center  border-solid border-4 border-black mx-auto cursor-pointer">
         <div>
           <Image
             src="/imgs/items/sampleHat.jpeg"
@@ -40,7 +48,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex  my-10 w-1/2 h-80 justify-center  border-solid border-4 border-black mx-auto">
+      <div className="flex  my-10 w-80 h-80 justify-center  border-solid border-4 border-black mx-auto cursor-pointer">
         <div>
           <Image
             src="/imgs/items/sampleHeadband.jpeg"
@@ -54,7 +62,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex  my-10 w-1/2 h-80 justify-center  border-solid border-4 border-black mx-auto">
+      <div className="flex  my-10 w-80 h-80 justify-center  border-solid border-4 border-black mx-auto cursor-pointer">
         <div>
           <Image
             src="/imgs/items/sampleSnood.jpeg"
