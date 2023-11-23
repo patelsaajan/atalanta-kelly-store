@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,9 @@ export default function RootLayout({
         {" "}
         <div className="flex justify-between p-10 font-bold text-xl">
           <button className="cursor-pointer">Menu</button>
-          <button className="cursor-none">Atalanta Kelly</button>
+          <button className="cursor-pointer">
+            <Link href={"/"}>Atalanta Kelly</Link>
+          </button>
           <button className="cursor-pointer">Cart</button>
         </div>
         {children}
