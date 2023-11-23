@@ -1,15 +1,11 @@
 import Image from "next/image";
 import DropMenu from "./components/menu";
 import Example from "./components/menu";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <div className="flex justify-between p-10 font-bold text-xl">
-        <button className="cursor-pointer">Menu</button>
-        <button className="cursor-none">Atalanta Kelly</button>
-        <button className="cursor-pointer">Cart</button>
-      </div>
       <div className="flex justify-center my-10 text-sm">
         Handmade with that Caroline craftmanship
       </div>
@@ -37,48 +33,56 @@ export default function Home() {
       </div>
 
       <div className="flex  my-10 w-80 h-80 justify-center  border-solid border-4 border-black mx-auto cursor-pointer">
-        <div>
-          <Image
-            src="/imgs/items/sampleHat.jpeg"
-            width={250}
-            height={250}
-            alt="picture of a stock hat"
-          />
-          <div className="flex justify-center my-5 text-lg font-bold">Hats</div>
-        </div>
+        <Link href={"/hats"}>
+          <div>
+            <Image
+              src="/imgs/items/sampleHat.jpeg"
+              width={250}
+              height={250}
+              alt="picture of a stock hat"
+            />
+            <div className="flex justify-center my-5 text-lg font-bold">
+              Hats
+            </div>
+          </div>
+        </Link>
       </div>
 
       <div className="flex  my-10 w-80 h-80 justify-center  border-solid border-4 border-black mx-auto cursor-pointer">
-        <div>
-          <Image
-            src="/imgs/items/sampleHeadband.jpeg"
-            width={250}
-            height={250}
-            alt="picture of a stock headband"
-          />
-          <div className="flex justify-center my-5 text-lg font-bold">
-            Headband
+        <Link href={"/headbands"}>
+          <div>
+            <Image
+              src="/imgs/items/sampleHeadband.jpeg"
+              width={250}
+              height={250}
+              alt="picture of a stock headband"
+            />
+            <div className="flex justify-center my-5 text-lg font-bold">
+              Headband
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="flex  my-10 w-80 h-80 justify-center  border-solid border-4 border-black mx-auto cursor-pointer">
-        <div>
-          <Image
-            src="/imgs/items/sampleSnood.jpeg"
-            width={250}
-            height={250}
-            alt="picture of a stock snood"
-          />
-          <div className="flex justify-center my-5 text-lg font-bold">
-            Snood
+        <Link href={"/snoods"}>
+          <div>
+            <Image
+              src="/imgs/items/sampleSnood.jpeg"
+              width={250}
+              height={250}
+              alt="picture of a stock snood"
+            />
+            <div className="flex justify-center my-5 text-lg font-bold">
+              Snood
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
 
-      <div className="flex justify-center my-20">
+      <div className="flex justify-center my-20 mx-10 text-center ">
         {" "}
-        For all enquires or to contact me please dm on instagram at
+        For all enquires or to contact me please DM on instagram at
         AtalantaKellyClothing
       </div>
     </>
